@@ -1,14 +1,7 @@
-services:
-  - type: redis
-    name: test-redis
-    plan: free
-    ipAllowList: []
-  - type: pserv
-    env: docker
-    name: test-worker
+previewsEnabled: true
+envVarGroups:
+  - name: doppler
     envVars:
-      - key: REDIS_URL
-        fromService:
-          type: redis
-          name: test-redis
-          property: connectionString
+      - key: DOPPLER_TOKEN
+        value: ""
+        previewValue: ""
