@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# if [[ $IS_PULL_REQUEST = true ]]; then
+#     export DOPPLER_TOKEN="$PREVIEW_TOKEN"
+#     export BLITZ_PUBLIC_SITE_URL="$RENDER_EXTERNAL_URL"
+# else
+#     export DOPPLER_TOKEN="$PRODUCTION_TOKEN"
+# fi
+
+yarn start

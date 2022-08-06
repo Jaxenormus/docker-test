@@ -1,0 +1,16 @@
+services:
+  - type: redis
+    name: test-redis
+    plan: free
+    ipAllowList: []
+  - type: pserv
+    env: docker
+    name: test-worker
+    plan: free
+    dockerCommand: bin/worker
+    envVars:
+      - key: REDIS_URL
+        fromService:
+          type: redis
+          name: test-redis
+          property: connectionString
