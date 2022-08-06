@@ -6,7 +6,6 @@ services:
   - type: pserv
     env: docker
     name: test-worker
-    plan: free
     envVars:
       - key: REDIS_URL
         fromService:
