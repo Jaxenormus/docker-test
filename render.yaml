@@ -7,7 +7,6 @@ services:
     env: docker
     name: test-worker
     plan: free
-    dockerCommand: bin/worker
     envVars:
       - key: REDIS_URL
         fromService:
