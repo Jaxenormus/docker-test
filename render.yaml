@@ -1,6 +1,6 @@
 previewsEnabled: true
 envVarGroups:
-  - name: doppler
+  - name: doppler-test
     envVars:
       - key: DOPPLER_TOKEN
         value: ""
