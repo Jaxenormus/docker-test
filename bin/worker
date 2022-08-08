@@ -7,4 +7,4 @@
 #     export DOPPLER_TOKEN="$PRODUCTION_TOKEN"
 # fi
 
-yarn start
+yarn startt
